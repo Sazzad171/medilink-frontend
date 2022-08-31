@@ -1,0 +1,178 @@
+/* theme default css */
+/* custom fonts */
+@font-face {
+	font-family: "CerebriSans";
+	src: url('../fonts/cerebri-sans/Cerebri-Sans-Book.ttf');
+	font-weight: 350;
+}
+@font-face {
+	font-family: "CerebriSans";
+	src: url('../fonts/cerebri-sans/Cerebri-Sans-SemiBold.ttf');
+	font-weight: 600;
+}
+@font-face {
+	font-family: "CerebriSans";
+	src: url('../fonts/cerebri-sans/Cerebri-Sans-Bold.ttf');
+	font-weight: 700;
+}
+
+* {
+	transition: 0.3s;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "CerebriSans";
+	font-style: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #0D263B;
+	font-weight: 350;
+	position: relative;
+}
+img {
+	height: auto;
+	max-width: 100%;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a,
+button {
+	color: #0D263B;
+	outline: medium none;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 400;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover {
+	color: #0D263B;
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "CerebriSans";
+	margin-top: 0px;
+	font-style: normal;
+	text-transform: normal;
+	color: #0D263B;
+	font-weight: 600;
+	line-height: 1;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 50px;
+	line-height: 60px;
+}
+h2 {
+	font-size: 42px;
+	line-height: 52px;
+}
+h3 {
+	font-size: 30px;
+	line-height: 38px;
+}
+h4 {
+	font-size: 26px;
+	line-height: 36px;
+}
+h5 {
+	font-size: 18px;
+	line-height: 22px;
+}
+h6 {
+	font-size: 16px;
+	line-height: 26px;
+}
+small {
+	font-size: 14px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none;
+}
+p {
+	font-size: 16px;
+	margin-bottom: 0;
+	line-height: 26px;
+	color: #696969;
+}
+
+/* button style */
+.btn {
+	background-color: #0069B8;
+	border: 1px solid #0069B8;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: 600;
+	margin-bottom: 0;
+	padding: 4px 24px;
+	border-radius: 4px;
+	text-align: center;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.btn:hover {
+	background-color: #fff;
+	color: #0069B8;
+}
+.btn.btn-white {
+	background-color: #fff;
+	color: #0069B8;
+}
+.btn.btn-white:hover {
+	background-color: #0069B8;
+	color: #fff;
+	border-color: #fff;
+}
+button:focus, .btn:focus {
+	box-shadow: none;
+	outline: 0;
+}
+
+/* input */
+.form-control,
+.form-select {
+	border-radius: 0;
+}
+.form-control:focus,
+.form-select:focus {
+	border-color: #ced4da;
+	box-shadow: none;
+}

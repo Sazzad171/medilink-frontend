@@ -1,0 +1,54 @@
+/* Normal desktop :. */
+@media (min-width: 1200px) {
+    
+}
+
+/* Mini desktop :1200px. */
+@media (max-width: 1200px) {
+    
+}
+ 
+/* Tablet :991px. */
+@media (max-width: 991px) {
+    /* header */
+    header .nav-link {
+        color: #0D263B;
+    }
+}
+ 
+/* Large mobile :767px. */
+@media (max-width: 767px) {
+    /* default style */
+    h2 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .btn {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+    /* home page start */
+    header .nav-link.active::before {
+        width: 30px;
+    }
+    .banner-area {
+        padding-top: 40px;
+        padding-bottom: 200px;
+    }
+    .banner-area .details {
+        margin-bottom: 20px;
+    }
+    .banner-area .wave-popup-btn {
+        margin-top: 80px;
+    }
+    
+}
+ 
+/* small mobile :576px. */
+@media (max-width: 576px) {
+    
+}
