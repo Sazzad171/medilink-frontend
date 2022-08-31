@@ -1,79 +1,95 @@
 /* 
-    Website name: Suvastu
+    Theme name: Medilink
     Author: Sazzad
 */
 
 /* ============ Header start ============= */
-header {
-    background: rgba(255, 255, 255, 0.12);
+/* header top area */
+.header-top-area {
+    background-color: #263458;
+    padding: 12px 0;
 }
-header.scrolled {
+.header-top-area .contact-address-box i,
+.header-top-area .contact-address-box a,
+.header-top-area .social-icon-box li,
+.header-top-area .social-icon-box a {
+    color: #fff;
+    font-size: 15px;
+}
+.header-top-area .contact-address-box .divider {
+    transform: rotate(105deg);
+        margin: 0 12px;
+}
+.header-top-area .social-icon-box li {
+    margin-left: 12px;
+}
+.header-top-area .social-icon-box a {
+    padding: 2px 4px;
+}
+.header-top-area .social-icon-box li:first-child {
+    margin-left: 0;
+}
+
+/* main header */
+.main-header {
+    background-color: #F0F4FF;
+}
+.main-header.scrolled {
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
     background-color: #fff;
 }
-header .navbar {
-    padding: 14px 0;
+.main-header .navbar {
+    padding: 0;
 }
-header .site-logo {
+.main-header .site-logo {
     max-width: 200px;
 }
-header .nav-item {
-    padding: 10px 15px;
+.main-header .nav-link {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    padding: 42px 16px !important;
+    color: #111111;
 }
-header .nav-link {
-    position: relative;
-    color: #fff;
-    font-weight: 600;
-    padding: 0 !important;
+.main-header .nav-link:hover {
+    color: #396CF0;
 }
-header.scrolled .nav-link {
-    color: #0D263B !important;
+.main-header .nav-link.active {
+    color: #396CF0;
 }
-header .nav-item .nav-link::before {
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 100%;
-    height: 2px;
-    width: 0;
-    max-width: 100%;
-    background-color: #0069B8;
-    transition: 0.3s;
-}
-header .nav-item:hover .nav-link::before {
-    width: 80px;
-}
-header .nav-link.active::before {
-    position: absolute;
-    content: '';
-    left: 0;
-    right: 0;
-    top: 100%;
-    height: 2px;
-    width: 100%;
-    background-color: #0069B8;
-}
-header .dropdown-menu {
+.main-header .dropdown-menu {
+    min-width: 14rem;
     border: 0;
     border-radius: 0;
     box-shadow: 2px 2px 20px rgb(0 0 0 / 10%);
 }
-header .dropdown-menu .dropdown-item {
+.main-header .dropdown-menu .dropdown-item {
     padding: 8px 20px;
 }
-header .dropdown:hover .dropdown-menu {
+.main-header .dropdown:hover .dropdown-menu {
     display: block;
+}
+.main-header .search-icon {
+    color: #7E8DB3;
+    font-size: 24px;
+}
+.main-header .appointment-btn {
+    font-weight: 500;
+    line-height: 18px;
+    padding: 14px 16px;
+    border-radius: 24px;
 }
 /* ============ Header end ============= */
 
 /* ============ banner start ============= */
 .banner-area {
-    padding: 260px 0 190px;
+    background-color: #F0F4FF;
 }
-.banner-area .content-area p {
-    font-weight: 400;
-    color: #e1e1e1;
-}
+
+/* ============ banner end ============= */
+
+
+
 /* wave play button */
 .video-play-button {
     position: absolute;
@@ -153,92 +169,5 @@ header .dropdown:hover .dropdown-menu {
       opacity: 0;
     }
   }
-/* ============ banner end ============= */
-
-/* ============ features start ============= */
-.features-area .section-heading .wrapper::before {
-    content: '';
-    position: absolute;
-    bottom: -12px;
-    left: 30%;
-    right: 30%;
-    height: 4px;
-    background-color: #0069B8;
-    border-radius: 10px;
-}
-.features-area .feature-box {
-    padding: 60px 50px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-.features-area .feature-box:hover {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-/* ============ features end ============= */
-
-/* ============ why suvastu start ============= */
-.why-us-area {
-    background-color: #F5FAFF;
-}
-/* ============ why suvastu end ============= */
-
-/* ============ testimonial start ============= */
-.testimonial-area .section-heading .wrapper::before {
-    content: '';
-    position: absolute;
-    bottom: -12px;
-    left: 30%;
-    right: 30%;
-    height: 4px;
-    background-color: #0069B8;
-    border-radius: 10px;
-}
-
-.testimonial-hash-items .item img {
-    
-}
-/* ============ testimonial end ============= */
 
 
-/* ============ footer start ============= */
-.footer-top-area {
-    background: url('../images/footer-pattern.png');
-    background-position: center;
-    background-size: cover;
-    background-color: #0061DF;
-}
-
-.footer-middle-area .heading {
-    font-family: 'Poppins', sans-serif;
-}
-.footer-middle-area .link-item {
-    margin-bottom: 10px;
-}
-.footer-middle-area .link-item a {
-    color: #424242;
-    position: relative;
-}
-.footer-middle-area .link-item a:hover {
-    color: #0069B8;
-    padding-left: 20px;
-}
-.footer-middle-area .link-item a:hover:before {
-    position: absolute;
-    content: '';
-    width: 12px;
-    height: 2px;
-    background-color: #0069B8;
-    left: 0;
-    top: 11px;
-}
-.footer-middle-area .social-icons-area a {
-    margin-right: 20px;
-}
-.footer-middle-area .social-icons-area i {
-    font-size: 20px;
-}
-
-.footer-bottom-area .copyright-text {
-    border-top: 1px solid #e1e1e1;
-    padding: 16px 0;
-}
-/* ============ footer end ============= */

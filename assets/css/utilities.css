@@ -502,13 +502,16 @@
 
 /* color */
 .text-blue {
-	color: #0069B8;
+	color: #396CF0;
+}
+.text-dark-1 {
+	color: #111111;
+}
+.text-dark-2 {
+	color: #646464;
 }
 
 /* background color */
 .bg-blue {
-	background-color: #0069B8;
-}
-.bg-light-ash {
-	background-color: #F4F4F4;
+	background-color: #396CF0;
 }
