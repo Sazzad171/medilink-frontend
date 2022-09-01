@@ -104,6 +104,75 @@
 /* ============ banner start ============= */
 .banner-area {
     background-color: #F0F4FF;
+    position: relative;
+    z-index: 1;
+}
+.banner-area .tagline {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+}
+.banner-area .heading {
+    font-family: 'Raleway';
+}
+.banner-area .details {
+    line-height: 26px;
+    max-width: 460px;
+}
+.banner-area .video-btn {
+    margin-left: 35px;
+}
+.banner-area .video-btn i {
+    background-color: #fff;
+    width: 46px;
+    height: 46px;
+    border-radius: 50px;
+    border: 1px solid #DDDDDD;
+    color: #111111;
+    margin-right: 11px;
+    padding: 13px 4px;
+    text-align: center;
+}
+.banner-area .video-btn:hover i {
+    background-color: #396CF0;
+    color: #fff;
+}
+.banner-area .img-box {
+    padding-left: 22%;
+}
+.banner-area .img-box .doctors-img {
+    position: absolute;
+    bottom: 20px;
+    left: -100px;
+}
+.banner-area .img-box .patients-img {
+    position: absolute;
+    top: 135px;
+    right: -130px;
+}
+.banner-area .img-box .yellow-bg {
+    position: absolute;
+    bottom: 0;
+    left: calc(22% - 78px);
+    z-index: -1;
+}
+.banner-area .blur-bg-orange {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    left: 89px;
+    bottom: 150px;
+    background: #FAB3B3;
+    filter: blur(160px);
+}
+.banner-area .blur-bg-purple {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: 0;
+    left: 0;
+    background: #D2B3FA;
+    filter: blur(160px);
 }
 
 /* ============ banner end ============= */
