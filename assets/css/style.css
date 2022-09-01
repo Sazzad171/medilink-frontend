@@ -50,12 +50,32 @@
     font-weight: 500;
     padding: 42px 16px !important;
     color: #111111;
+    position: relative;
+}
+.main-header .nav-link::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-radius: 50px;
+    background-color: #396CF0;
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 2.5px);
+    transition: width 0.3s, height 0.3s, bottom 0.3s;
+}
+.main-header .nav-link:hover::before {
+    bottom: 20px;
+    width: 5px;
+    height: 5px;
 }
 .main-header .nav-link:hover {
     color: #396CF0;
 }
 .main-header .nav-link.active {
     color: #396CF0;
+}
+.main-header .dropdown-toggle::after {
+    display: none;
 }
 .main-header .dropdown-menu {
     min-width: 14rem;
