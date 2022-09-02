@@ -155,3 +155,88 @@ button:focus, .btn:focus {
 	border-color: #ced4da;
 	box-shadow: none;
 }
+
+/* animation */
+.floating-up-down {
+	-webkit-animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
+}
+@-webkit-keyframes float {
+	0% {
+	  transform: translatey(0px);
+	}
+	50% {
+	  transform: translatey(-20px);
+	}
+	100% {
+	  transform: translatey(0px);
+	}
+}
+  
+@keyframes float {
+	0% {
+	  transform: translatey(0px);
+	}
+	50% {
+	  transform: translatey(-20px);
+	}
+	100% {
+	  transform: translatey(0px);
+	}
+}
+
+.floating-up-down2 {
+	-webkit-animation: floattwo 6s ease-in-out infinite;
+    animation: floattwo 6s ease-in-out infinite;
+}
+@-webkit-keyframes floattwo {
+	0% {
+	  transform: translatey(0px);
+	}
+	50% {
+	  transform: translatey(30px);
+	}
+	100% {
+	  transform: translatey(0px);
+	}
+}
+  
+@keyframes floattwo {
+	0% {
+	  transform: translatey(0px);
+	}
+	50% {
+	  transform: translatey(30px);
+	}
+	100% {
+	  transform: translatey(0px);
+	}
+}
+
+.rounding-effect {
+	-webkit-animation: rounding 6s ease-in-out infinite;
+    animation: rounding 6s ease-in-out infinite;
+}
+@-webkit-keyframes rounding {
+	0% {
+	  transform: rotate(0);
+	}
+	50% {
+		transform: rotate(-45deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+  
+@keyframes rounding {
+	0% {
+		transform: rotate(0);
+	}
+	50% {
+		transform: rotate(-45deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}

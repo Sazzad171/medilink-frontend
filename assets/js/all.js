@@ -28,16 +28,24 @@
         margin:0,
         items:1,
         dots:false,
+        autoplay:false,
+        autoplayTimeout:4000,
+        autoplaySpeed: 2000,
         URLhashListener:true
     })
     $('.testimonial-hash-items').owlCarousel({
-        loop:true,
-        margin:10,
+        loop:false,
+        margin: 2,
         nav:false,
-        items:3,
+        items:4,
         dots:false,
-        center: true,
         URLhashListener:true
+    });
+
+    // toggle current class in testimonial image
+    $(".testimonial-hash-items img").click(function () {
+        $(".testimonial-hash-items img").removeClass("current");
+        $(this).addClass('current');
     });
     
 })(jQuery);

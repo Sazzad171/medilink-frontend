@@ -382,14 +382,48 @@
 .about-2-area .video-box {
     padding-top: 20px;
 }
-.about-2-area .video-box img {
+.about-2-area .video-box .video-preview {
     border-radius: 4px;
     border: 5px solid #fff;
+}
+.about-2-area .video-box .dots-bg {
+    position: absolute;
+    left: -40px;
+    bottom: -38px;
+    z-index: -1;
+}
+.about-2-area .blue-circle-bg {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    z-index: -1;
+}
+.about-2-area .white-line-bg {
+    position: absolute;
+    left: 29%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.about-2-area .orange-shadow-bg {
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    width: 240px;
+    height: 240px;
+    background: rgb(250, 179, 179);
+    filter: blur(140px);
+    border-radius: 50%;
+    z-index: -1;
 }
 .about-2-area .img-box {
     padding-left: 10%;
 }
-
+.about-2-area .img-box .wave-img {
+    position: absolute;
+    top: 134px;
+    left: -40px;
+}
 .video-play-button {
     position: absolute;
     z-index: 10;
@@ -456,3 +490,121 @@
   }
 
 /* ============ about 2 end ============= */
+
+/* ============ counter start ============= */
+.counter-area {
+    background: #F0F4FF;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.counter-area .count-number {
+    font-family: 'Raleway';
+}
+.counter-area .count-title {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #848484;
+}
+.counter-area .wave-img {
+    position: absolute;
+    left: -30px;
+    bottom: 105%;
+}
+.counter-area .big-wave-img {
+    height: 100%;
+    position: absolute;
+    left: 45%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.counter-area .line-img {
+    position: absolute;
+    bottom: 0;
+    right: 110px;
+    z-index: -1;
+}
+.counter-area .orange-shadow-bg {
+    position: absolute;
+    bottom: 0;
+    left: 160px;
+    width: 277px;
+    height: 260px;
+    background: #FAB3B3;
+    filter: blur(150px);
+    border-radius: 100%;
+    z-index: -1;
+}
+.counter-area .blue-shadow-bg {
+    position: absolute;
+    bottom: 46px;
+    right: 16%;
+    width: 240px;
+    height: 240px;
+    background: #D2B3FA;
+    filter: blur(140px);
+    border-radius: 100%;
+    z-index: -1;
+}
+/* ============ counter end ============= */
+
+/* ============ testimonial end ============= */
+.testimonial-single {
+    z-index: 1;
+}
+.testimonial-single .comment {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 120px;
+}
+.testimonial-single .person-info h4 {
+    font-family: 'Raleway';
+}
+.testimonial-single .person-info p {
+    font-size: 15px;
+    line-height: 18px;
+    color: #A8C0FF;
+    padding-left: 39px;
+    position: relative;
+}
+.testimonial-single .person-info p::before {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+}
+.testimonial-hash-items {
+    position: absolute;
+    left: 0;
+    bottom: 90px;
+    max-width: 340px;
+}
+.testimonial-hash-items img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    padding: 8px;
+}
+.testimonial-hash-items img.current {
+    border: 1px dashed #88A7F6;
+}
+.testimonial-wrapper .quote-icon {
+    position: absolute;
+    top: -15px;
+    right: -6px;
+    z-index: 0;
+}
+.testimonial-wrapper .testimonial-text {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    z-index: 0;
+}
+/* ============ testimonial end ============= */
