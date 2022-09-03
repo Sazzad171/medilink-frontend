@@ -20,6 +20,9 @@ body {
 	position: relative;
 	overflow-x: hidden;
 }
+section {
+	overflow-x: hidden;
+}
 img {
 	height: auto;
 	max-width: 100%;
